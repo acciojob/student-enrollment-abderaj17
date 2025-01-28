@@ -12,7 +12,7 @@ const enrollmentData = {
 // complete this function
 async function calculateEnrollment() {
 	let sum = 0;
-	for(let i = 0; i < enrollmentData.length; i++){
+	for(let i = 0; i < enrollmentData.enrollmentData.length; i++){
 		if(enrollmentData[i]){
 			sum++;
 		}
