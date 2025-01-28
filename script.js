@@ -11,13 +11,18 @@ const enrollmentData = {
 
 // complete this function
 async function calculateEnrollment() {
-	let sum = 0;
+	let courseCount = {};
+	
 	for(let i = 0; i < enrollmentData.enrollmentData.length; i++){
-		if(enrollmentData[i]){
-			sum++;
+		let course = enrollmentData.enrollmentData[i].course;
+		if(courseCount[course]){
+			courseCount[course]++;
+		}else
+		{
+			courseCount[course] = 1;
 		}
 	}
-	return sum;
+	return cou;
 }
 
 calculateEnrollment();
