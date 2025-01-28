@@ -10,6 +10,14 @@ const enrollmentData = {
 };
 
 // complete this function
-async function calculateEnrollment() {}
+async function calculateEnrollment() {
+	let sum = 0;
+	for(let i = 0; i < enrollmentData.length; i++){
+		if(enrollmentData[i]){
+			sum++;
+		}
+	}
+	return sum;
+}
 
 calculateEnrollment();
