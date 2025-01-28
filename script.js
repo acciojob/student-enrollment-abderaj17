@@ -22,7 +22,7 @@ async function calculateEnrollment() {
 			courseCount[course] = 1;
 		}
 	}
-	return cou;
+	return courseCount;
 }
 
-calculateEnrollment();
+console.log(calculateEnrollment());
